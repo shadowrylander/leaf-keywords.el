@@ -68,7 +68,7 @@
    feather el-get system-packages
 
    ;; `leaf-keywords-before-require'
-   hydra major-mode-hydra pretty-hydra key-combo smartrep
+   hydra hydra+ hercules major-mode-hydra pretty-hydra key-combo smartrep
    key-chord grugru
 
    ;; `leaf-keywords-after-require'
@@ -134,6 +134,12 @@
    :hydra      (progn
                  (leaf-register-autoload (cadr leaf--value) leaf--name)
                  `(,@(mapcar (lambda (elm) `(defhydra ,@elm)) (car leaf--value)) ,@leaf--body))
+   :hydra+     (progn
+                 (leaf-register-autoload (cadr leaf--value) leaf--name)
+                 `(,@(mapcar (lambda (elm) `(defhydra+ ,@elm)) (car leaf--value)) ,@leaf--body))
+   :hercules   (progn
+                 (leaf-register-autoload (cadr leaf--value) leaf--name)
+                 `(,@(mapcar (lambda (elm) `(hercules-def ,@elm)) (car leaf--value)) ,@leaf--body))
    :mode-hydra (progn
                  (leaf-register-autoload (cadr leaf--value) leaf--name)
                  `(,@(mapcar (lambda (elm) `(major-mode-hydra-define+ ,@elm)) (car leaf--value)) ,@leaf--body))
@@ -233,7 +239,7 @@
               (lambda (elm) (leaf-normalize-list-in-list elm 'dotlistp))
               leaf--value)))
 
-    ((memq leaf--key '(:hydra))
+    ((memq leaf--key '(:hydra :hydra+ :hercules))
      (let ((fn (lambda (elm)
                  (mapcar (lambda (el) (cadr el))
                          (if (stringp (nth 2 elm)) (nthcdr 3 elm) (nthcdr 2 elm)))))
