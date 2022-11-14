@@ -1,71 +1,258 @@
-#+author: conao3
-#+date: <2019-05-24 Fri>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-11-14 Mon 10:24 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="conao3" />
+<link rel="stylesheet" type="text/css" href="https://combinatronics.io/sylvorg/settings/main/src/styles/primary/syvl.css" />
+<link rel="icon" href="https://combinatronics.io/sylvorg/settings/main/src/icons/favicons/shiny-zigzagoon-galar.ico" sizes="any" />
+<link rel="icon" href="https://combinatronics.io/sylvorg/settings/main/src/icons/favicons/shiny-zigzagoon-galar.svg" />
+<link rel="manifest" href="https://combinatronics.io/sylvorg/settings/main/manifest.json" />
+<link rel="stylesheet" type="text/css" href="https://combinatronics.io/sylvorg/settings/main/src/styles/highlight/paraiso-dark.min.css" />
+<script src="https://combinatronics.io/sylvorg/settings/main/src/scripts/highlight/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+<div class="header">
+<h1>We Are Syvlorg.</h1>
+<a href="">About Me</a>
+<a href="">About This Website</a>
+<a href="">About Syvlorg</a>
+<a href="https://resume.syvl.org">Résumé</a>
+<a href="https://index.syvl.org">Index</a>
+</div>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "left",
+        displayIndent: "5%",
 
-[[https://github.com/conao3/leaf-keywords.el][https://raw.githubusercontent.com/conao3/files/master/blob/headers/png/leaf-keywords.el.png]]
-[[https://github.com/conao3/leaf-keywords.el/blob/master/LICENSE][https://img.shields.io/github/license/conao3/leaf-keywords.el.svg?style=flat-square]]
-[[https://github.com/conao3/leaf-keywords.el/releases][https://img.shields.io/github/tag/conao3/leaf-keywords.el.svg?style=flat-square]]
-[[https://github.com/conao3/leaf-keywords.el/actions][https://github.com/conao3/leaf-keywords.el/workflows/Main%20workflow/badge.svg]]
-[[https://app.codacy.com/project/conao3/leaf-keywords.el/dashboard][https://img.shields.io/codacy/grade/f3075770da434fbbb900e88e25af80dd.svg?logo=codacy&style=flat-square]]
-[[https://www.patreon.com/conao3][https://img.shields.io/badge/patreon-become%20a%20patron-orange.svg?logo=patreon&style=flat-square]]
-[[https://twitter.com/conao_3][https://img.shields.io/badge/twitter-@conao__3-blue.svg?logo=twitter&style=flat-square]]
-[[https://join.slack.com/t/conao3-support/shared_invite/enQtNjUzMDMxODcyMjE1LTA4ZGRmOWYwZWE3NmE5NTkyZjk3M2JhYzU2ZmRkMzdiMDdlYTQ0ODMyM2ExOGY0OTkzMzZiMTNmZjJjY2I5NTM][https://img.shields.io/badge/chat-on_slack-blue.svg?logo=slack&style=flat-square]]
-[[https://melpa.org/#/leaf-keywords][https://melpa.org/packages/leaf-keywords-badge.svg]]
-[[https://stable.melpa.org/#/leaf-keywords][https://stable.melpa.org/packages/leaf-keywords-badge.svg]]
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org0128418">Table of Contents</a></li>
+<li><a href="#orga082845">Description</a></li>
+<li><a href="#org02aba2d">Install</a>
+<ul>
+<li><a href="#orga4cbf8a">MELPA</a></li>
+<li><a href="#orgdea70af">Manual install</a></li>
+</ul>
+</li>
+<li><a href="#org8cb57ff">Usage</a></li>
+<li><a href="#org30035f2">Ensure keywords</a>
+<ul>
+<li><a href="#orgf376f1b">:package, :ensure keywords</a></li>
+<li><a href="#org76a24df">:feather keyword</a></li>
+<li><a href="#orgc26ef3d">:el-get keyword</a></li>
+<li><a href="#org8dc50f6">:straight keyword</a></li>
+<li><a href="#orgef4bd83">:ensure-system-package keyword</a></li>
+</ul>
+</li>
+<li><a href="#orgf307bbd">Bind keywords</a>
+<ul>
+<li><a href="#orgbc4092e">:bind :bind* keywords</a></li>
+<li><a href="#org620bbc6">:hydra, :mode-hydra, :pretty-hydra keyword</a></li>
+<li><a href="#org9e9b615">:transient keyword</a></li>
+<li><a href="#orga47b812">:chord :chord* keywords</a></li>
+<li><a href="#org2f3abfa">:smartrep, :smartrep* keywords</a></li>
+<li><a href="#org37d7e1a">:combo, :combo* keywords</a></li>
+<li><a href="#org715ef6b">:mode-hook keyword</a></li>
+</ul>
+</li>
+<li><a href="#org6d0d37d">Modeline keywords</a>
+<ul>
+<li><a href="#org9ac8558">:blackout keyword</a></li>
+<li><a href="#org9487779">:diminish keyword</a></li>
+<li><a href="#orgdcd9394">:delight keyword</a></li>
+</ul>
+</li>
+<li><a href="#org8044adb">Misc keywords</a>
+<ul>
+<li><a href="#org26a10c6">:grugru keyword</a></li>
+<li><a href="#org3351a3b">:defaults keyword</a></li>
+</ul>
+</li>
+<li><a href="#org95b57a9">Information</a>
+<ul>
+<li><a href="#org1963b1c">Donation</a></li>
+<li><a href="#orga69c6f5">Community</a></li>
+<li><a href="#org576d9e4">Contribution</a>
+<ul>
+<li><a href="#org5fffa03">Define new keywords</a></li>
+</ul>
+</li>
+<li><a href="#org4a815ea">Migration</a>
+<ul>
+<li><a href="#org219a9d5">leaf-keywords v1.0 to v2.0</a></li>
+</ul>
+</li>
+<li><a href="#org479ad4b">License</a></li>
+<li><a href="#org494a454">Author</a></li>
+<li><a href="#org9c8ff34">Contributors</a></li>
+<li><a href="#orgce945b5">Special Thanks</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p>
+<a href="https://github.com/conao3/leaf-keywords.el"><img src="https://raw.githubusercontent.com/conao3/files/master/blob/headers/png/leaf-keywords.el.png" alt="leaf-keywords.el.png" /></a>
+<a href="https://github.com/conao3/leaf-keywords.el/blob/master/LICENSE"><img src="https://img.shields.io/github/license/conao3/leaf-keywords.el.svg?style=flat-square" alt="leaf-keywords.el.svg?style=flat-square" /></a>
+<a href="https://github.com/conao3/leaf-keywords.el/releases"><img src="https://img.shields.io/github/tag/conao3/leaf-keywords.el.svg?style=flat-square" alt="leaf-keywords.el.svg?style=flat-square" /></a>
+<a href="https://github.com/conao3/leaf-keywords.el/actions"><object type="image/svg+xml" data="https://github.com/conao3/leaf-keywords.el/workflows/Main%20workflow/badge.svg" class="org-svg">
+Sorry, your browser does not support SVG.</object></a>
+<a href="https://app.codacy.com/project/conao3/leaf-keywords.el/dashboard"><img src="https://img.shields.io/codacy/grade/f3075770da434fbbb900e88e25af80dd.svg?logo=codacy&amp;style=flat-square" alt="f3075770da434fbbb900e88e25af80dd.svg?logo=codacy&amp;style=flat-square" /></a>
+<a href="https://www.patreon.com/conao3"><img src="https://img.shields.io/badge/patreon-become%20a%20patron-orange.svg?logo=patreon&amp;style=flat-square" alt="patreon-become%20a%20patron-orange.svg?logo=patreon&amp;style=flat-square" /></a>
+<a href="https://twitter.com/conao_3"><img src="https://img.shields.io/badge/twitter-@conao__3-blue.svg?logo=twitter&amp;style=flat-square" alt="twitter-@conao__3-blue.svg?logo=twitter&amp;style=flat-square" /></a>
+<a href="https://join.slack.com/t/conao3-support/shared_invite/enQtNjUzMDMxODcyMjE1LTA4ZGRmOWYwZWE3NmE5NTkyZjk3M2JhYzU2ZmRkMzdiMDdlYTQ0ODMyM2ExOGY0OTkzMzZiMTNmZjJjY2I5NTM"><img src="https://img.shields.io/badge/chat-on_slack-blue.svg?logo=slack&amp;style=flat-square" alt="chat-on_slack-blue.svg?logo=slack&amp;style=flat-square" /></a>
+<a href="https://melpa.org/#/leaf-keywords"><object type="image/svg+xml" data="https://melpa.org/packages/leaf-keywords-badge.svg" class="org-svg">
+Sorry, your browser does not support SVG.</object></a>
+<a href="https://stable.melpa.org/#/leaf-keywords"><object type="image/svg+xml" data="https://stable.melpa.org/packages/leaf-keywords-badge.svg" class="org-svg">
+Sorry, your browser does not support SVG.</object></a>
+</p>
 
-* Table of Contents
-- [[*Description][Description]]
-- [[*Install][Install]]
-  - [[*MELPA][MELPA]]
-  - [[*Manual install][Manual install]]
-- [[*Usage][Usage]]
-- [[*Ensure keywords][Ensure keywords]]
-  - [[*:package, :ensure keywords][:package, :ensure keywords]]
-  - [[*:feather keyword][:feather keyword]]
-  - [[*:el-get keyword][:el-get keyword]]
-  - [[*:straight keyword][:straight keyword]]
-  - [[*:ensure-system-package keyword][:ensure-system-package keyword]]
-- [[*Bind keywords][Bind keywords]]
-  - [[*:hydra, :mode-hydra, :pretty-hydra keyword][:hydra, :mode-hydra, :pretty-hydra keyword]]
-  - [[*:transient keyword][:transient keyword]]
-  - [[*:mode-hook keyword][:mode-hook keyword]]
-- [[*Modeline keywords][Modeline keywords]]
-  - [[*:blackout keyword][:blackout keyword]]
-  - [[*:diminish keyword][:diminish keyword]]
-  - [[*:delight keyword][:delight keyword]]
-- [[*Misc keywords][Misc keywords]]
-  - [[*:grugru keyword][:grugru keyword]]
-  - [[*:defaults keyword][:defaults keyword]]
-- [[*Information][Information]]
-  - [[*Donation][Donation]]
-  - [[*Community][Community]]
-  - [[*Contribution][Contribution]]
-    - [[*Define new keywords][Define new keywords]]
-  - [[*Migration][Migration]]
-  - [[*License][License]]
-  - [[*Author][Author]]
-  - [[*Contributors][Contributors]]
-  - [[*Special Thanks][Special Thanks]]
+<div id="outline-container-org0128418" class="outline-2">
+<h2 id="org0128418">Table of Contents</h2>
+<div class="outline-text-2" id="text-org0128418">
+<ul class="org-ul">
+<li><a href="#orga082845">Description</a></li>
+<li><a href="#org02aba2d">Install</a>
+<ul class="org-ul">
+<li><a href="#orga4cbf8a">MELPA</a></li>
+<li><a href="#orgdea70af">Manual install</a></li>
+</ul></li>
+<li><a href="#org8cb57ff">Usage</a></li>
+<li><a href="#org30035f2">Ensure keywords</a>
+<ul class="org-ul">
+<li><a href="#orgf376f1b">:package, :ensure keywords</a></li>
+<li><a href="#org76a24df">:feather keyword</a></li>
+<li><a href="#orgc26ef3d">:el-get keyword</a></li>
+<li><a href="#org8dc50f6">:straight keyword</a></li>
+<li><a href="#orgef4bd83">:ensure-system-package keyword</a></li>
+</ul></li>
+<li><a href="#orgf307bbd">Bind keywords</a>
+<ul class="org-ul">
+<li><a href="#org620bbc6">:hydra, :mode-hydra, :pretty-hydra keyword</a></li>
+<li><a href="#org9e9b615">:transient keyword</a></li>
+<li><a href="#org715ef6b">:mode-hook keyword</a></li>
+</ul></li>
+<li><a href="#org6d0d37d">Modeline keywords</a>
+<ul class="org-ul">
+<li><a href="#org9ac8558">:blackout keyword</a></li>
+<li><a href="#org9487779">:diminish keyword</a></li>
+<li><a href="#orgdcd9394">:delight keyword</a></li>
+</ul></li>
+<li><a href="#org8044adb">Misc keywords</a>
+<ul class="org-ul">
+<li><a href="#org26a10c6">:grugru keyword</a></li>
+<li><a href="#org3351a3b">:defaults keyword</a></li>
+</ul></li>
+<li><a href="#org95b57a9">Information</a>
+<ul class="org-ul">
+<li><a href="#org1963b1c">Donation</a></li>
+<li><a href="#orga69c6f5">Community</a></li>
+<li><a href="#org576d9e4">Contribution</a>
+<ul class="org-ul">
+<li><a href="#org5fffa03">Define new keywords</a></li>
+</ul></li>
+<li><a href="#org4a815ea">Migration</a></li>
+<li><a href="#org479ad4b">License</a></li>
+<li><a href="#org494a454">Author</a></li>
+<li><a href="#org9c8ff34">Contributors</a></li>
+<li><a href="#orgce945b5">Special Thanks</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
 
-* Description
-~leaf.el~ is yet another [[https://github.com/jwiegley/use-package][use-package]].
+<div id="outline-container-orga082845" class="outline-2">
+<h2 id="orga082845">Description</h2>
+<div class="outline-text-2" id="text-orga082845">
+<p>
+<code>leaf.el</code> is yet another <a href="https://github.com/jwiegley/use-package">use-package</a>.
+</p>
 
-~leaf-keywords.el~ add additional keywords for [[https://github.com/conao3/leaf.el][leaf.el]].
+<p>
+<code>leaf-keywords.el</code> add additional keywords for <a href="https://github.com/conao3/leaf.el">leaf.el</a>.
+</p>
+</div>
+</div>
 
-* Install
-** MELPA
-~leaf.el~ and ~leaf-keywords.el~ can install with package.el from MELPA, so sample instration code is below.
+<div id="outline-container-org02aba2d" class="outline-2">
+<h2 id="org02aba2d">Install</h2>
+<div class="outline-text-2" id="text-org02aba2d">
+</div>
+<div id="outline-container-orga4cbf8a" class="outline-3">
+<h3 id="orga4cbf8a">MELPA</h3>
+<div class="outline-text-3" id="text-orga4cbf8a">
+<p>
+<code>leaf.el</code> and <code>leaf-keywords.el</code> can install with package.el from MELPA, so sample instration code is below.
+</p>
 
+<p>
 In order to work from Emacs-22, the package manager and the key binding manager
-that accompanies ~leaf~ must also be developed with the assumption that they will work from Emacs-22.
+that accompanies <code>leaf</code> must also be developed with the assumption that they will work from Emacs-22.
+</p>
 
+<p>
 I have plans to develop it, but it's not finished yet.
+</p>
 
+<p>
 Package to be developed
-  - [[https://github.com/conao3/feather.el][feather.el]] instead of ~package.el~
-  - leaf-key.el instead of ~bind-key~ -> (Achieved! Now ~leaf~ builtin)
+</p>
+<ul class="org-ul">
+<li><a href="https://github.com/conao3/feather.el">feather.el</a> instead of <code>package.el</code></li>
+<li>leaf-key.el instead of <code>bind-key</code> -&gt; (Achieved! Now <code>leaf</code> builtin)</li>
+</ul>
 
-#+begin_src emacs-lisp
-  (prog1 "prepare leaf"
+<div class="org-src-container">
+<pre><code class="language-lisp match-braces rainbow-braces">  (prog1 "prepare leaf"
     (prog1 "package"
       (custom-set-variables
        '(package-archives '(("org"   . "https://orgmode.org/elpa/")
@@ -92,17 +279,26 @@ Package to be developed
       (leaf hydra :ensure t)
       (leaf el-get :ensure t
         :custom ((el-get-git-shallow-clone  . t)))))
-#+end_src
+</code></pre>
+</div>
+</div>
+</div>
 
-** Manual install
-Put ~leaf.el~ at any folder added ~load-path~.
-Then ~(require 'leaf)~ and use like ~use-pacakge~.
+<div id="outline-container-orgdea70af" class="outline-3">
+<h3 id="orgdea70af">Manual install</h3>
+<div class="outline-text-3" id="text-orgdea70af">
+<p>
+Put <code>leaf.el</code> at any folder added <code>load-path</code>.
+Then <code>(require 'leaf)</code> and use like <code>use-pacakge</code>.
+</p>
 
-(In this example, you installed/loaded leaf directly, so you can configure ~package.el~ using ~leaf~.)
-#+BEGIN_SRC emacs-lisp
-  ;; add to load-path
+<p>
+(In this example, you installed/loaded leaf directly, so you can configure <code>package.el</code> using <code>leaf</code>.)
+</p>
+<div class="org-src-container">
+<pre><code class="language-lisp match-braces rainbow-braces">  ;; add to load-path
   ;; (locate-user-emacs-file "site-lisp/leaf.el")
-  ;;  => "~/.emacs.d/local/26.1/site-lisp/leaf.el"
+  ;;  =&gt; "~/.emacs.d/local/26.1/site-lisp/leaf.el"
 
   (prog1 "leaf"
     (add-to-list 'load-path (locate-user-emacs-file "site-lisp/leaf.el"))
@@ -124,20 +320,39 @@ Then ~(require 'leaf)~ and use like ~use-pacakge~.
       (leaf hydra :ensure t)
       (leaf el-get :ensure t
         :custom ((el-get-git-shallow-clone  . t)))))
-#+END_SRC
+</code></pre>
+</div>
+</div>
+</div>
+</div>
 
-* Usage
-Use ~leaf~ in your init.el like ~use-package~.
-You declaratively tell the ~leaf~ to configure the package using special keywords.
+<div id="outline-container-org8cb57ff" class="outline-2">
+<h2 id="org8cb57ff">Usage</h2>
+<div class="outline-text-2" id="text-org8cb57ff">
+<p>
+Use <code>leaf</code> in your init.el like <code>use-package</code>.
+You declaratively tell the <code>leaf</code> to configure the package using special keywords.
+</p>
 
-~leaf~ converts your declaration into Elisp for Emacs to understand, and Emacs executes it to configure the package.
+<p>
+<code>leaf</code> converts your declaration into Elisp for Emacs to understand, and Emacs executes it to configure the package.
+</p>
+</div>
+</div>
 
-* Ensure keywords
-** :package, :ensure keywords
-These keywords are buildin. Info is [[https://github.com/conao3/leaf.el#package-ensure-keywords][here]].
+<div id="outline-container-org30035f2" class="outline-2">
+<h2 id="org30035f2">Ensure keywords</h2>
+<div class="outline-text-2" id="text-org30035f2">
+</div>
+<div id="outline-container-orgf376f1b" class="outline-3">
+<h3 id="orgf376f1b">:package, :ensure keywords</h3>
+<div class="outline-text-3" id="text-orgf376f1b">
+<p>
+These keywords are buildin. Info is <a href="https://github.com/conao3/leaf.el#package-ensure-keywords">here</a>.
+</p>
 
-#+begin_src emacs-lisp
-  (cort-deftest-with-macroexpand leaf/package
+<div class="org-src-container">
+<pre><code class="language-lisp match-braces rainbow-braces">  (cort-deftest-with-macroexpand leaf/package
     '(((leaf leaf
          :package t
          :config (leaf-init))
@@ -183,16 +398,25 @@ These keywords are buildin. Info is [[https://github.com/conao3/leaf.el#package-
                (error
                 (leaf-error "In `macrostep' block, failed to :package of macrostep.  Error msg: %s"
                             (error-message-string err)))))))))))
-#+end_src
+</code></pre>
+</div>
+</div>
+</div>
 
-** :feather keyword
-~:feather~ keyword provede frontend of ~feather~.
+<div id="outline-container-org76a24df" class="outline-3">
+<h3 id="org76a24df">:feather keyword</h3>
+<div class="outline-text-3" id="text-org76a24df">
+<p>
+<code>:feather</code> keyword provede frontend of <code>feather</code>.
+</p>
 
-Like most ~:package~, but use ~feather-add-after-installed-hook-sexp~ to set up an S-exp like ~:config~ so that feather expects it.
+<p>
+Like most <code>:package</code>, but use <code>feather-add-after-installed-hook-sexp</code> to set up an S-exp like <code>:config</code> so that feather expects it.
 If a leaf block specifies multiple packages to install, the S-exp is set to execute after the last package is installed.
+</p>
 
-#+begin_src emacs-lisp
-  (cort-deftest-with-macroexpand leaf/feather
+<div class="org-src-container">
+<pre><code class="language-lisp match-braces rainbow-braces">  (cort-deftest-with-macroexpand leaf/feather
     '(
       ;; 't will be converted leaf--name
       ((leaf leaf
@@ -254,17 +478,28 @@ If a leaf block specifies multiple packages to install, the S-exp is set to exec
          (feather-add-after-installed-hook-sexp leaf
            (leaf-pre-init)
            (leaf-init))))))
-#+end_src
+</code></pre>
+</div>
+</div>
+</div>
 
-** :el-get keyword
-~:el-get~ provide frontend of ~el-get-bundle~.
+<div id="outline-container-orgc26ef3d" class="outline-3">
+<h3 id="orgc26ef3d">:el-get keyword</h3>
+<div class="outline-text-3" id="text-orgc26ef3d">
+<p>
+<code>:el-get</code> provide frontend of <code>el-get-bundle</code>.
+</p>
 
-If you specify ~t~, leaf assumes that you specified the name of the leaf-block.
+<p>
+If you specify <code>t</code>, leaf assumes that you specified the name of the leaf-block.
+</p>
 
-Given a list, the arguments are passed as is to the ~el-get-bundle~.
+<p>
+Given a list, the arguments are passed as is to the <code>el-get-bundle</code>.
+</p>
 
-#+begin_src emacs-lisp
-  (cort-deftest-with-macroexpand leaf/el-get
+<div class="org-src-container">
+<pre><code class="language-lisp match-braces rainbow-braces">  (cort-deftest-with-macroexpand leaf/el-get
     '(((leaf leaf
          :init (leaf-pre-init)
          :el-get t
@@ -347,17 +582,28 @@ Given a list, the arguments are passed as is to the ~el-get-bundle~.
               (el-get-bundle kazu-yamamoto/Mew :name mew :build ("./configure" "make"))))
          (leaf-pre-init)
          (leaf-init)))))
-#+end_src
+</code></pre>
+</div>
+</div>
+</div>
 
-** :straight keyword
-~:straight~ provides a frontend for ~straight-use-package~.
+<div id="outline-container-org8dc50f6" class="outline-3">
+<h3 id="org8dc50f6">:straight keyword</h3>
+<div class="outline-text-3" id="text-org8dc50f6">
+<p>
+<code>:straight</code> provides a frontend for <code>straight-use-package</code>.
+</p>
 
-If you specify ~t~, leaf assumes that you specified the name of the leaf-block.
+<p>
+If you specify <code>t</code>, leaf assumes that you specified the name of the leaf-block.
+</p>
 
-Given a list, the arguments are passed as is to ~straight-use-package~.
+<p>
+Given a list, the arguments are passed as is to <code>straight-use-package</code>.
+</p>
 
-#+begin_src elisp
-  (cort-deftest-with-macroexpand leaf/straight
+<div class="org-src-container">
+<pre><code class="language-elisp match-braces rainbow-braces">  (cort-deftest-with-macroexpand leaf/straight
     '(((leaf leaf
          :init (leaf-pre-init)
          :straight t
@@ -432,15 +678,24 @@ Given a list, the arguments are passed as is to ~straight-use-package~.
               (straight-use-package '(mew :type git :host gitlab :repo "fake/fakest" :no-build))))
          (leaf-pre-init)
          (leaf-init)))))
-#+end_src
+</code></pre>
+</div>
+</div>
+</div>
 
-** :ensure-system-package keyword
-~:ensure-system-package~ provides a frontend for [[https://gitlab.com/jabranham/system-packages][system-packages]].
+<div id="outline-container-orgef4bd83" class="outline-3">
+<h3 id="orgef4bd83">:ensure-system-package keyword</h3>
+<div class="outline-text-3" id="text-orgef4bd83">
+<p>
+<code>:ensure-system-package</code> provides a frontend for <a href="https://gitlab.com/jabranham/system-packages">system-packages</a>.
+</p>
 
-If you specify ~t~, leaf assumes that you specified the name of the leaf-block.
+<p>
+If you specify <code>t</code>, leaf assumes that you specified the name of the leaf-block.
+</p>
 
-#+begin_src elisp
-  (cort-deftest-with-macroexpand leaf/ensure-system-package
+<div class="org-src-container">
+<pre><code class="language-elisp match-braces rainbow-braces">  (cort-deftest-with-macroexpand leaf/ensure-system-package
     '(
       ;; specify a symbol to set to autoload function
       ((leaf leaf
@@ -501,14 +756,25 @@ If you specify ~t~, leaf assumes that you specified the name of the leaf-block.
          :ensure-system-package (prettier . "npm i -g prettier-plugin-svelte"))
        (prog1 'vterm
          (unless (executable-find "prettier") (async-shell-command "npm i -g prettier-plugin-svelte"))))))
-#+end_src
+</code></pre>
+</div>
+</div>
+</div>
+</div>
 
-* Bind keywords
-** :bind :bind* keywords
-These keywords are buildin. Info is [[https://github.com/conao3/leaf.el#bind-bind-keywords][here]].
+<div id="outline-container-orgf307bbd" class="outline-2">
+<h2 id="orgf307bbd">Bind keywords</h2>
+<div class="outline-text-2" id="text-orgf307bbd">
+</div>
+<div id="outline-container-orgbc4092e" class="outline-3">
+<h3 id="orgbc4092e">:bind :bind* keywords</h3>
+<div class="outline-text-3" id="text-orgbc4092e">
+<p>
+These keywords are buildin. Info is <a href="https://github.com/conao3/leaf.el#bind-bind-keywords">here</a>.
+</p>
 
-#+begin_src emacs-lisp
-  (cort-deftest-with-macroexpand leaf/bind
+<div class="org-src-container">
+<pre><code class="language-lisp match-braces rainbow-braces">  (cort-deftest-with-macroexpand leaf/bind
     '(((leaf macrostep
          :package t
          :bind (("C-c e" . macrostep-expand)))
@@ -646,20 +912,31 @@ These keywords are buildin. Info is [[https://github.com/conao3/leaf.el#bind-bin
               (value `(("C-M-i" . global-map) flyspell-correct-wrapper ,(and old (not (numberp old)) old))))
          (push value leaf-key-bindlist)
          (define-key global-map (kbd "C-M-i") 'flyspell-correct-wrapper)))))
-#+end_src
+</code></pre>
+</div>
+</div>
+</div>
 
-** :hydra, :mode-hydra, :pretty-hydra keyword
-~:hydra~ provide frontend for [[https://github.com/abo-abo/hydra][hydra]].
+<div id="outline-container-org620bbc6" class="outline-3">
+<h3 id="org620bbc6">:hydra, :mode-hydra, :pretty-hydra keyword</h3>
+<div class="outline-text-3" id="text-org620bbc6">
+<p>
+<code>:hydra</code> provide frontend for <a href="https://github.com/abo-abo/hydra">hydra</a>.
+</p>
 
-If you pass a list, you pass it to ~defhydra~, and if you pass a nested list, you pass each one to it.
+<p>
+If you pass a list, you pass it to <code>defhydra</code>, and if you pass a nested list, you pass each one to it.
+</p>
 
-The reason for using this keyword is that it automatically creates an ~autoload~ statement.
+<p>
+The reason for using this keyword is that it automatically creates an <code>autoload</code> statement.
+</p>
 
-#+begin_src emacs-lisp
-  (cort-deftest-with-macroexpand leaf/hydra
+<div class="org-src-container">
+<pre><code class="language-lisp match-braces rainbow-braces">  (cort-deftest-with-macroexpand leaf/hydra
     '(((leaf face-remap
          :hydra (hydra-zoom
-                 (global-map "<f2>")
+                 (global-map "&lt;f2&gt;")
                  "zoom"
                  ("g" text-scale-increase "in")
                  ("l" text-scale-decrease "out")))
@@ -669,15 +946,15 @@ The reason for using this keyword is that it automatically creates an ~autoload~
          (eval-after-load 'hydra
            '(progn
               (defhydra hydra-zoom
-                (global-map "<f2>")
+                (global-map "&lt;f2&gt;")
                 "zoom"
                 ("g" text-scale-increase "in")
                 ("l" text-scale-decrease "out"))))))
 
       ((leaf yasnippet
          :bind (:yas-minor-mode-map
-                ("<f3>" . hydra-yas-primary/body)
-                ("<f2>" . hydra-yas/body))
+                ("&lt;f3&gt;" . hydra-yas-primary/body)
+                ("&lt;f2&gt;" . hydra-yas/body))
          :hydra ((hydra-yas-primary
                   (:hint nil)
                   "yas-primary"
@@ -721,8 +998,8 @@ The reason for using this keyword is that it automatically creates an ~autoload~
          (autoload #'hydra-yas/body "yasnippet" nil t)
          (leaf-keys
           ((:yas-minor-mode-map :package yasnippet
-                                ("<f3>" . hydra-yas-primary/body)
-                                ("<f2>" . hydra-yas/body))))
+                                ("&lt;f3&gt;" . hydra-yas-primary/body)
+                                ("&lt;f2&gt;" . hydra-yas/body))))
          (eval-after-load 'hydra
            '(progn
               (defhydra hydra-yas-primary
@@ -753,12 +1030,15 @@ The reason for using this keyword is that it automatically creates an ~autoload~
                 ("g" yas/global-mode)
                 ("m" yas/minor-mode)
                 ("a" yas-reload-all))))))))
-#+end_src
+</code></pre>
+</div>
 
-And leaf support [[https://github.com/jerrypnz/major-mode-hydra.el][major-mode-hydra]] and [[https://github.com/jerrypnz/major-mode-hydra.el#pretty-hydra][pretty-hydra]] via ~:mode-hydra~ and ~:pretty-hydra~.
+<p>
+And leaf support <a href="https://github.com/jerrypnz/major-mode-hydra.el">major-mode-hydra</a> and <a href="https://github.com/jerrypnz/major-mode-hydra.el#pretty-hydra">pretty-hydra</a> via <code>:mode-hydra</code> and <code>:pretty-hydra</code>.
+</p>
 
-#+begin_src emacs-lisp
-  (cort-deftest-with-macroexpand leaf/mode-hydra
+<div class="org-src-container">
+<pre><code class="language-lisp match-braces rainbow-braces">  (cort-deftest-with-macroexpand leaf/mode-hydra
     '(
       ;; assume leaf--name as major-mode and no body
       ((leaf go-mode
@@ -917,19 +1197,26 @@ And leaf support [[https://github.com/jerrypnz/major-mode-hydra.el][major-mode-h
             "Imports"
             (("ia" go-import-add "add")
              ("ir" go-remove-unused-imports "cleanup"))))))))
-#+end_src
+</code></pre>
+</div>
+</div>
+</div>
 
 
 
-** :transient keyword
-~:transient~ provide frontend for [[https://github.com/magit/transient][transient]].
+<div id="outline-container-org9e9b615" class="outline-3">
+<h3 id="org9e9b615">:transient keyword</h3>
+<div class="outline-text-3" id="text-org9e9b615">
+<p>
+<code>:transient</code> provide frontend for <a href="https://github.com/magit/transient">transient</a>.
+</p>
 
-If you pass a list, you pass it to ~define-transient-command~, and if you pass a nested list, you pass each one to it.
+<p>
+If you pass a list, you pass it to <code>define-transient-command</code>, and if you pass a nested list, you pass each one to it.
+</p>
 
-# The reason for using this keyword is that it automatically creates an ~autoload~ statement.
-
-#+begin_src emacs-lisp
-  (cort-deftest-with-macroexpand leaf/transient
+<div class="org-src-container">
+<pre><code class="language-lisp match-braces rainbow-braces">  (cort-deftest-with-macroexpand leaf/transient
     '(((leaf dired-git
          :transient
          (transient-dwim-dired-mode--git
@@ -969,14 +1256,23 @@ If you pass a list, you pass it to ~define-transient-command~, and if you pass a
              ("m" "Merge" dired-git-merge)
              ("P" "Push" dired-git-push)
              ("!" "Run" dired-git-run)]])))))
-#+end_src
-** :chord :chord* keywords
-~:chord~ and ~:chord*~ provide frontend for ~leaf-key-chord~ which bind key for [[https://github.com/emacsorphanage/key-chord][key-chord]].
+</code></pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orga47b812" class="outline-3">
+<h3 id="orga47b812">:chord :chord* keywords</h3>
+<div class="outline-text-3" id="text-orga47b812">
+<p>
+<code>:chord</code> and <code>:chord*</code> provide frontend for <code>leaf-key-chord</code> which bind key for <a href="https://github.com/emacsorphanage/key-chord">key-chord</a>.
+</p>
 
-The usage and notes are the same as for the ~:bind~ keyword.
+<p>
+The usage and notes are the same as for the <code>:bind</code> keyword.
+</p>
 
-#+begin_src emacs-lisp
-  (cort-deftest-with-macroexpand leaf/chord
+<div class="org-src-container">
+<pre><code class="language-lisp match-braces rainbow-braces">  (cort-deftest-with-macroexpand leaf/chord
     '(((leaf macrostep
          :ensure t
          :chord (("jk" . macrostep-expand)))
@@ -1122,22 +1418,37 @@ The usage and notes are the same as for the ~:bind~ keyword.
        (progn
          (leaf-key [key-chord 106 107] 'undo nil)
          (leaf-key [key-chord 107 106] 'undo nil)))))
-#+end_src
+</code></pre>
+</div>
+</div>
+</div>
 
-** :smartrep, :smartrep* keywords
-~:smartrep~ and ~:smartrep*~ provide frontend for [[https://github.com/myuhe/smartrep.el][smartrep]].
+<div id="outline-container-org2f3abfa" class="outline-3">
+<h3 id="org2f3abfa">:smartrep, :smartrep* keywords</h3>
+<div class="outline-text-3" id="text-org2f3abfa">
+<p>
+<code>:smartrep</code> and <code>:smartrep*</code> provide frontend for <a href="https://github.com/myuhe/smartrep.el">smartrep</a>.
+</p>
 
-They can process a list of arguments that the ~smartrep~ accepts, or a nested list of them.
+<p>
+They can process a list of arguments that the <code>smartrep</code> accepts, or a nested list of them.
+</p>
 
-Automatically generates an ~autoload~ statement when a function symbol is passed.
+<p>
+Automatically generates an <code>autoload</code> statement when a function symbol is passed.
+</p>
 
+<p>
 Quoting a function or quoting a binding list works the same way.
+</p>
 
-If you omit the key-map to bind, use ~global-map~ instead in ~:smartrep~ and
-~leaf-key-override-global-map~ for leaf-key in ~:smartrep*~.
+<p>
+If you omit the key-map to bind, use <code>global-map</code> instead in <code>:smartrep</code> and
+<code>leaf-key-override-global-map</code> for leaf-key in <code>:smartrep*</code>.
+</p>
 
-#+begin_src emacs-lisp
-  (cort-deftest-with-macroexpand leaf/smartrep
+<div class="org-src-container">
+<pre><code class="language-lisp match-braces rainbow-braces">  (cort-deftest-with-macroexpand leaf/smartrep
     '(((leaf multiple-cursors
          :smartrep ("C-t"
                     (("C-p" . mc/mark-previous-like-this)
@@ -1284,23 +1595,36 @@ If you omit the key-map to bind, use ~global-map~ instead in ~:smartrep~ and
               (smartrep-define-key leaf-key-override-global-map "s-c"
                 '(("M-n" outline-next-visible-heading 1)
                   ("M-p" outline-previous-visible-heading 1)))))))))
-#+end_src
+</code></pre>
+</div>
+</div>
+</div>
 
-** :combo, :combo* keywords
-~:combo~, ~:combo*~ provide frontend for [[https://github.com/uk-ar/key-combo][key-combo]].
+<div id="outline-container-org37d7e1a" class="outline-3">
+<h3 id="org37d7e1a">:combo, :combo* keywords</h3>
+<div class="outline-text-3" id="text-org37d7e1a">
+<p>
+<code>:combo</code>, <code>:combo*</code> provide frontend for <a href="https://github.com/uk-ar/key-combo">key-combo</a>.
+</p>
 
+<p>
 They can process a list of arguments, or a nested list of them.
+</p>
 
-Automatically generates an ~autoload~ statement when a function symbol is passed.
+<p>
+Automatically generates an <code>autoload</code> statement when a function symbol is passed.
+</p>
 
-If you omit the key-map to bind, use ~global-map~ instead in ~:combo~ and
-~leaf-key-override-global-map~ for leaf-key in ~:combo*~.
+<p>
+If you omit the key-map to bind, use <code>global-map</code> instead in <code>:combo</code> and
+<code>leaf-key-override-global-map</code> for leaf-key in <code>:combo*</code>.
+</p>
 
-#+begin_src emacs-lisp
-  (cort-deftest-with-macroexpand leaf/key-combo
+<div class="org-src-container">
+<pre><code class="language-lisp match-braces rainbow-braces">  (cort-deftest-with-macroexpand leaf/key-combo
     '(((leaf key-combo
          :combo (("="   . (" = " " == " " === " ))
-                 ("=>"  . " => ")
+                 ("=&gt;"  . " =&gt; ")
                  ("C-a" . (back-to-indentation move-beginning-of-line beginning-of-buffer key-combo-return))
                  ("C-e" . (move-end-of-line end-of-buffer key-combo-return))))
        (prog1 'key-combo
@@ -1312,14 +1636,14 @@ If you omit the key-map to bind, use ~global-map~ instead in ~:combo~ and
          (autoload #'end-of-buffer "key-combo" nil t)
          (eval-after-load 'key-combo
            '(progn
-              (key-combo-define global-map "=>" " => ")
+              (key-combo-define global-map "=&gt;" " =&gt; ")
               (key-combo-define global-map "C-a" '(back-to-indentation move-beginning-of-line beginning-of-buffer key-combo-return))
               (key-combo-define global-map "C-e" '(move-end-of-line end-of-buffer key-combo-return))))))
 
       ((leaf key-combo
          :combo (emacs-lisp-mode-map
                  ("="   . (" = " " == " " === " ))
-                 ("=>"  . " => ")
+                 ("=&gt;"  . " =&gt; ")
                  ("C-a" . (back-to-indentation move-beginning-of-line beginning-of-buffer key-combo-return))
                  ("C-e" . (move-end-of-line end-of-buffer key-combo-return))))
        (prog1 'key-combo
@@ -1332,13 +1656,13 @@ If you omit the key-map to bind, use ~global-map~ instead in ~:combo~ and
          (eval-after-load 'key-combo
            '(progn
               (key-combo-define emacs-lisp-mode-map "=" '(" = " " == " " === "))
-              (key-combo-define emacs-lisp-mode-map "=>" " => ")
+              (key-combo-define emacs-lisp-mode-map "=&gt;" " =&gt; ")
               (key-combo-define emacs-lisp-mode-map "C-a" '(back-to-indentation move-beginning-of-line beginning-of-buffer key-combo-return))
               (key-combo-define emacs-lisp-mode-map "C-e" '(move-end-of-line end-of-buffer key-combo-return))))))
 
       ((leaf key-combo
          :combo ((("="   . (" = " " == " " === " ))
-                  ("=>"  . " => ")
+                  ("=&gt;"  . " =&gt; ")
                   ("C-a" . (back-to-indentation move-beginning-of-line beginning-of-buffer key-combo-return))
                   ("C-e" . (move-end-of-line end-of-buffer key-combo-return)))
                  (emacs-lisp-mode-map
@@ -1353,7 +1677,7 @@ If you omit the key-map to bind, use ~global-map~ instead in ~:combo~ and
          (autoload #'end-of-buffer "key-combo" nil t)
          (eval-after-load 'key-combo
            '(progn
-              (key-combo-define global-map "=>" " => ")
+              (key-combo-define global-map "=&gt;" " =&gt; ")
               (key-combo-define global-map "C-a" '(back-to-indentation move-beginning-of-line beginning-of-buffer key-combo-return))
               (key-combo-define global-map "C-e" '(move-end-of-line end-of-buffer key-combo-return))
               (key-combo-define emacs-lisp-mode-map "." '("." " . "))
@@ -1362,7 +1686,7 @@ If you omit the key-map to bind, use ~global-map~ instead in ~:combo~ and
   (cort-deftest-with-macroexpand leaf/key-combo*
     '(((leaf key-combo
          :combo* (("="   . (" = " " == " " === " ))
-                  ("=>"  . " => ")
+                  ("=&gt;"  . " =&gt; ")
                   ("C-a" . (back-to-indentation move-beginning-of-line beginning-of-buffer key-combo-return))
                   ("C-e" . (move-end-of-line end-of-buffer key-combo-return))))
        (prog1 'key-combo
@@ -1374,14 +1698,14 @@ If you omit the key-map to bind, use ~global-map~ instead in ~:combo~ and
          (autoload #'end-of-buffer "key-combo" nil t)
          (eval-after-load 'key-combo
            '(progn
-              (key-combo-define leaf-key-override-global-map "=>" " => ")
+              (key-combo-define leaf-key-override-global-map "=&gt;" " =&gt; ")
               (key-combo-define leaf-key-override-global-map "C-a" '(back-to-indentation move-beginning-of-line beginning-of-buffer key-combo-return))
               (key-combo-define leaf-key-override-global-map "C-e" '(move-end-of-line end-of-buffer key-combo-return))))))
 
       ((leaf key-combo
          :combo* (emacs-lisp-mode-map
                   ("="   . (" = " " == " " === " ))
-                  ("=>"  . " => ")
+                  ("=&gt;"  . " =&gt; ")
                   ("C-a" . (back-to-indentation move-beginning-of-line beginning-of-buffer key-combo-return))
                   ("C-e" . (move-end-of-line end-of-buffer key-combo-return))))
        (prog1 'key-combo
@@ -1394,13 +1718,13 @@ If you omit the key-map to bind, use ~global-map~ instead in ~:combo~ and
          (eval-after-load 'key-combo
            '(progn
               (key-combo-define emacs-lisp-mode-map "=" '(" = " " == " " === "))
-              (key-combo-define emacs-lisp-mode-map "=>" " => ")
+              (key-combo-define emacs-lisp-mode-map "=&gt;" " =&gt; ")
               (key-combo-define emacs-lisp-mode-map "C-a" '(back-to-indentation move-beginning-of-line beginning-of-buffer key-combo-return))
               (key-combo-define emacs-lisp-mode-map "C-e" '(move-end-of-line end-of-buffer key-combo-return))))))
 
       ((leaf key-combo
          :combo* ((("="   . (" = " " == " " === " ))
-                   ("=>"  . " => ")
+                   ("=&gt;"  . " =&gt; ")
                    ("C-a" . (back-to-indentation move-beginning-of-line beginning-of-buffer key-combo-return))
                    ("C-e" . (move-end-of-line end-of-buffer key-combo-return)))
                   (emacs-lisp-mode-map
@@ -1415,24 +1739,37 @@ If you omit the key-map to bind, use ~global-map~ instead in ~:combo~ and
          (autoload #'end-of-buffer "key-combo" nil t)
          (eval-after-load 'key-combo
            '(progn
-              (key-combo-define leaf-key-override-global-map "=>" " => ")
+              (key-combo-define leaf-key-override-global-map "=&gt;" " =&gt; ")
               (key-combo-define leaf-key-override-global-map "C-a" '(back-to-indentation move-beginning-of-line beginning-of-buffer key-combo-return))
               (key-combo-define leaf-key-override-global-map "C-e" '(move-end-of-line end-of-buffer key-combo-return))
               (key-combo-define emacs-lisp-mode-map "." '("." " . "))
               (key-combo-define emacs-lisp-mode-map "=" '("= " "eq " "equal "))))))))
-#+end_src
+</code></pre>
+</div>
+</div>
+</div>
 
-** :mode-hook keyword
-~:mode-hook~ provides a front end for setting hooks.
+<div id="outline-container-org715ef6b" class="outline-3">
+<h3 id="org715ef6b">:mode-hook keyword</h3>
+<div class="outline-text-3" id="text-org715ef6b">
+<p>
+<code>:mode-hook</code> provides a front end for setting hooks.
+</p>
 
-Functions registered in hooks are automatically declared function as names like ~leaf-keywords-mode-hook--cc-mode--cc-mode-hook~.
+<p>
+Functions registered in hooks are automatically declared function as names like <code>leaf-keywords-mode-hook--cc-mode--cc-mode-hook</code>.
+</p>
 
-If you write multiple expressions like ~:config~, the hook name is guessed from ~leaf-name~ and the function is registered to the guessed hook.
+<p>
+If you write multiple expressions like <code>:config</code>, the hook name is guessed from <code>leaf-name</code> and the function is registered to the guessed hook.
+</p>
 
-To specify the hook name explicitly, specify a hook symbol in ~car~ and a list of S expressions in ~cdr~.
+<p>
+To specify the hook name explicitly, specify a hook symbol in <code>car</code> and a list of S expressions in <code>cdr</code>.
+</p>
 
-#+begin_src emacs-lisp
-  (cort-deftest-with-macroexpand leaf/mode-hook
+<div class="org-src-container">
+<pre><code class="language-lisp match-braces rainbow-braces">  (cort-deftest-with-macroexpand leaf/mode-hook
     '((;; you can place sexp(s) like :config
        (leaf cc-mode
          :mode-hook
@@ -1525,24 +1862,39 @@ To specify the hook name explicitly, specify a hook symbol in ~car~ and a list o
            (electric-pair-mode 1)
            (delete-selection-mode 1))
          (add-hook 'cc-mode-hook 'leaf-keywords-mode-hook--cc-mode--cc-mode-hook)))))
-#+end_src
+</code></pre>
+</div>
+</div>
+</div>
+</div>
 
-* Modeline keywords
-** :blackout keyword
-~:blackout~ keyword provide frontend for [[https://github.com/raxod502/blackout][blackout]].
+<div id="outline-container-org6d0d37d" class="outline-2">
+<h2 id="org6d0d37d">Modeline keywords</h2>
+<div class="outline-text-2" id="text-org6d0d37d">
+</div>
+<div id="outline-container-org9ac8558" class="outline-3">
+<h3 id="org9ac8558">:blackout keyword</h3>
+<div class="outline-text-3" id="text-org9ac8558">
+<p>
+<code>:blackout</code> keyword provide frontend for <a href="https://github.com/raxod502/blackout">blackout</a>.
+</p>
 
+<p>
 There are three packages that change the display of the modeline:
-~deminish~, ~delight~ and ~blackout~, but the most recent
-developed is ~blackout~, and the developer of ~leaf~ recommend
-that you use ~blackout~.
+<code>deminish</code>, <code>delight</code> and <code>blackout</code>, but the most recent
+developed is <code>blackout</code>, and the developer of <code>leaf</code> recommend
+that you use <code>blackout</code>.
+</p>
 
+<p>
 This package allows you to change the display of the major mode
 as well as the minor mode.  And it also requires two arguments,
 so it can be set in the cons-cell and has a high affinity with
-other keywords in ~leaf~.
+other keywords in <code>leaf</code>.
+</p>
 
-#+begin_src emacs-lisp
-  (cort-deftest-with-macroexpand leaf/blackout
+<div class="org-src-container">
+<pre><code class="language-lisp match-braces rainbow-braces">  (cort-deftest-with-macroexpand leaf/blackout
     '(
       ;; t will be converted leaf--name
       ((leaf foo-mode
@@ -1606,13 +1958,20 @@ other keywords in ~leaf~.
          (with-eval-after-load 'simple
            (blackout 'auto-fill-mode " Auto-Fill")
            (blackout 'overwrite-mode " Overwrite"))))))
-#+end_src
+</code></pre>
+</div>
+</div>
+</div>
 
-** :diminish keyword
-~:diminish~ keyword provide frontend for [[https://github.com/myrjola/diminish.el/tree/master][diminish]].
+<div id="outline-container-org9487779" class="outline-3">
+<h3 id="org9487779">:diminish keyword</h3>
+<div class="outline-text-3" id="text-org9487779">
+<p>
+<code>:diminish</code> keyword provide frontend for <a href="https://github.com/myrjola/diminish.el/tree/master">diminish</a>.
+</p>
 
-#+begin_src emacs-lisp
-  (cort-deftest-with-macroexpand leaf/diminish
+<div class="org-src-container">
+<pre><code class="language-lisp match-braces rainbow-braces">  (cort-deftest-with-macroexpand leaf/diminish
     '(((leaf autorevert
          :diminish t)
        (prog1 'autorevert
@@ -1658,13 +2017,20 @@ other keywords in ~leaf~.
          (with-eval-after-load 'projectile
            (diminish 'projectile-mode
                      '(:eval (concat " " (projectile-project-name)))))))))
-#+end_src
+</code></pre>
+</div>
+</div>
+</div>
 
-** :delight keyword
-~:delight~ keyword provide frontend for delight ([[http://elpa.gnu.org/packages/delight.html][ELPA]], [[https://www.emacswiki.org/emacs/DelightedModes][Emacs wiki]]).
+<div id="outline-container-orgdcd9394" class="outline-3">
+<h3 id="orgdcd9394">:delight keyword</h3>
+<div class="outline-text-3" id="text-orgdcd9394">
+<p>
+<code>:delight</code> keyword provide frontend for delight (<a href="http://elpa.gnu.org/packages/delight.html">ELPA</a>, <a href="https://www.emacswiki.org/emacs/DelightedModes">Emacs wiki</a>).
+</p>
 
-#+begin_src emacs-lisp
-  (cort-deftest-with-macroexpand leaf/delight
+<div class="org-src-container">
+<pre><code class="language-lisp match-braces rainbow-braces">  (cort-deftest-with-macroexpand leaf/delight
     '(((leaf autorevert
          :delight t)
        (prog1 'autorevert
@@ -1720,24 +2086,39 @@ other keywords in ~leaf~.
          (delight 'rainbow-mode)
          (delight 'overwrite-mode " Ov" t)
          (delight 'emacs-lisp-mode "Elisp" :major)))))
-#+end_src
+</code></pre>
+</div>
+</div>
+</div>
+</div>
 
-* Misc keywords
-** :grugru keyword
-~:grugru~ keyword provide frontend for [[https://github.com/ROCKTAKEY/grugru][grugru]].
+<div id="outline-container-org8044adb" class="outline-2">
+<h2 id="org8044adb">Misc keywords</h2>
+<div class="outline-text-2" id="text-org8044adb">
+</div>
+<div id="outline-container-org26a10c6" class="outline-3">
+<h3 id="org26a10c6">:grugru keyword</h3>
+<div class="outline-text-3" id="text-org26a10c6">
+<p>
+<code>:grugru</code> keyword provide frontend for <a href="https://github.com/ROCKTAKEY/grugru">grugru</a>.
+</p>
 
-=grugru= allows you to define conversion rules for symbols based on
-the =major-mode=.  This =:grugru= keyword defines a conversion rule
-for =grugru= and, if you omit the measure mode specification, it
-assumes that =leaf--name= is the target =major-mode=.
+<p>
+<code>grugru</code> allows you to define conversion rules for symbols based on
+the <code>major-mode</code>.  This <code>:grugru</code> keyword defines a conversion rule
+for <code>grugru</code> and, if you omit the measure mode specification, it
+assumes that <code>leaf--name</code> is the target <code>major-mode</code>.
+</p>
 
-If =leaf--name= is not suffixed with =-mode=, it is automatically
-compensated for.  If your intended =major-mode= does not follow
-these rules, you cannot omit target =major-mode=.
-(e.g. =c-mode= in =cc-mode=)
+<p>
+If <code>leaf--name</code> is not suffixed with <code>-mode</code>, it is automatically
+compensated for.  If your intended <code>major-mode</code> does not follow
+these rules, you cannot omit target <code>major-mode</code>.
+(e.g. <code>c-mode</code> in <code>cc-mode</code>)
+</p>
 
-#+begin_src emacs-lisp
-  (cort-deftest-with-macroexpand leaf/grugru
+<div class="org-src-container">
+<pre><code class="language-lisp match-braces rainbow-braces">  (cort-deftest-with-macroexpand leaf/grugru
     '(
       ;; grugru difinition with :grugru keyword
       ((leaf cc-mode
@@ -1809,20 +2190,31 @@ these rules, you cannot omit target =major-mode=.
            (symbol "sin" "cos" "tan"))
           (gnuplot-mode
            (symbol "log" "log10")))))))
-#+end_src
+</code></pre>
+</div>
+</div>
+</div>
 
-** :defaults keyword
+<div id="outline-container-org3351a3b" class="outline-3">
+<h3 id="org3351a3b">:defaults keyword</h3>
+<div class="outline-text-3" id="text-org3351a3b">
+<p>
 This is a keyword that calls a dynamically named function.
+</p>
 
+<p>
 If you define various settings for this function in a separate
 file, you may be able to reduce the number of lines in
 init.el.  This is a one of use case of this.
+</p>
 
+<p>
 Also, if you distribute the functions to be used, someone can use
 your recommended settings.
+</p>
 
-#+begin_src emacs-lisp
-  (cort-deftest-with-macroexpand leaf/defaults
+<div class="org-src-container">
+<pre><code class="language-lisp match-braces rainbow-braces">  (cort-deftest-with-macroexpand leaf/defaults
     '(((leaf helm
          :ensure t
          :defaults t)
@@ -1870,45 +2262,87 @@ your recommended settings.
          :defaults garario3)
        (prog1 'helm
          (leaf-handler-package helm helm nil)))))
-#+end_src
+</code></pre>
+</div>
+</div>
+</div>
+</div>
 
-* Information
-** Donation
-I love OSS and I am dreaming of working on it as *full-time* job.
+<div id="outline-container-org95b57a9" class="outline-2">
+<h2 id="org95b57a9">Information</h2>
+<div class="outline-text-2" id="text-org95b57a9">
+</div>
+<div id="outline-container-org1963b1c" class="outline-3">
+<h3 id="org1963b1c">Donation</h3>
+<div class="outline-text-3" id="text-org1963b1c">
+<p>
+I love OSS and I am dreaming of working on it as <b>full-time</b> job.
+</p>
 
-*With your support*, I will be able to spend more time at OSS!
+<p>
+<b>With your support</b>, I will be able to spend more time at OSS!
+</p>
 
-[[https://www.patreon.com/conao3][https://c5.patreon.com/external/logo/become_a_patron_button.png]]
 
-** Community
+<div id="orge488d84" class="figure">
+<p><a href="https://www.patreon.com/conao3"><img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="become_a_patron_button.png" /></a>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga69c6f5" class="outline-3">
+<h3 id="orga69c6f5">Community</h3>
+<div class="outline-text-3" id="text-orga69c6f5">
+<p>
 All feedback and suggestions are welcome!
+</p>
 
-You can use github issues, but you can also use [[https://join.slack.com/t/conao3-support/shared_invite/enQtNjUzMDMxODcyMjE1LTA4ZGRmOWYwZWE3NmE5NTkyZjk3M2JhYzU2ZmRkMzdiMDdlYTQ0ODMyM2ExOGY0OTkzMzZiMTNmZjJjY2I5NTM][Slack]]
+<p>
+You can use github issues, but you can also use <a href="https://join.slack.com/t/conao3-support/shared_invite/enQtNjUzMDMxODcyMjE1LTA4ZGRmOWYwZWE3NmE5NTkyZjk3M2JhYzU2ZmRkMzdiMDdlYTQ0ODMyM2ExOGY0OTkzMzZiMTNmZjJjY2I5NTM">Slack</a>
 if you want a more casual conversation.
+</p>
+</div>
+</div>
 
-** Contribution
+<div id="outline-container-org576d9e4" class="outline-3">
+<h3 id="org576d9e4">Contribution</h3>
+<div class="outline-text-3" id="text-org576d9e4">
+<p>
 We welcome PR!
-Travis Cl test ~leaf-test.el~ with all Emacs version 24.4 or above.
+Travis Cl test <code>leaf-test.el</code> with all Emacs version 24.4 or above.
+</p>
 
+<p>
 I think that it is difficult to prepare the environment locally,
 so I think that it is good to throw PR and test Travis for the time being!
 Feel free throw PR!
+</p>
+</div>
 
-*** Define new keywords
-The following script is useful for adding keywords. This is a simplified ~leaf~ macro for ~*scratch*~.
+<div id="outline-container-org5fffa03" class="outline-4">
+<h4 id="org5fffa03">Define new keywords</h4>
+<div class="outline-text-4" id="text-org5fffa03">
+<p>
+The following script is useful for adding keywords. This is a simplified <code>leaf</code> macro for <code>*scratch*</code>.
+</p>
 
+<p>
 You first design the list that the normalizer should return and define the keyword processor.
-Then trial-and-error builds the normalizer by this script, and by typing ~C-M-x (eval-defun)~ at the beginning of ~defcustom~,
-it can be overwrite variable and recognized by ~leaf~ (At that time the function to specify ~:set~ is executed.).
+Then trial-and-error builds the normalizer by this script, and by typing <code>C-M-x (eval-defun)</code> at the beginning of <code>defcustom</code>,
+it can be overwrite variable and recognized by <code>leaf</code> (At that time the function to specify <code>:set</code> is executed.).
+</p>
 
-Once you have the S-expression expected from [[https://github.com/joddie/macrostep][macrostep]], let ~leaf-keywords-test.el~ define multiple tests
+<p>
+Once you have the S-expression expected from <a href="https://github.com/joddie/macrostep">macrostep</a>, let <code>leaf-keywords-test.el</code> define multiple tests
 to ensure that they will execute correctly into the future.
+</p>
 
-#+begin_src emacs-lisp
-  (let ((name 'leaf)
-        (args '(;; << Your new leaf argument >>
+<div class="org-src-container">
+<pre><code class="language-lisp match-braces rainbow-braces">  (let ((name 'leaf)
+        (args '(;; &lt;&lt; Your new leaf argument &gt;&gt;
                 :combo (("="   . (" = " " == " " === " ))
-                        ("=>"  . " => ")
+                        ("=&gt;"  . " =&gt; ")
                         ("C-a" . (back-to-indentation move-beginning-of-line beginning-of-buffer key-combo-return))
                         ("C-e" . (move-end-of-line end-of-buffer key-combo-return))))))
 
@@ -1931,7 +2365,7 @@ to ensure that they will execute correctly into the future.
           (setq leaf--value
                 (cond
 
-                 ;; << Your new normalizer >>
+                 ;; &lt;&lt; Your new normalizer &gt;&gt;
                  ((memq leaf--key '(:combo :combo*))
                   (let ((map (if (eq :combo leaf--key) 'global-map 'leaf-key-override-global-map))
                         (val) (fns))
@@ -1971,41 +2405,103 @@ to ensure that they will execute correctly into the future.
                   ,@(eval (plist-get leaf-keywords leaf--key)))
                 ))
           nil))))
-#+end_src
+</code></pre>
+</div>
 
-Note: ~macrostep~ return ~function~ instead of #', replace it via follow regexp by ~C-M-% (query-replace-regexp)~.
+<p>
+Note: <code>macrostep</code> return <code>function</code> instead of #', replace it via follow regexp by <code>C-M-% (query-replace-regexp)</code>.
+</p>
 
-#+begin_quote
+<blockquote>
+<p>
 (autoload
          (function \([^ ]*\))
          \([^ ]*\) → (autoload #'\1 \2
-#+end_quote
+</p>
+</blockquote>
+</div>
+</div>
+</div>
 
-** Migration
-*** leaf-keywords v1.0 to v2.0
-**** Remove leaf-keywords-after-load
-We also have ~leaf-keywords-after-require~, it's confusing.
-Plsease use ~leaf-keywords-after-require~.
-**** Rename leaf-keyowrds-before-load to leaf-keyowrds-before-require
-We also have ~leaf-keyowrds-after-require~,
-we should use ~leaf-keyowrds-before-require~ to consistency.
+<div id="outline-container-org4a815ea" class="outline-3">
+<h3 id="org4a815ea">Migration</h3>
+<div class="outline-text-3" id="text-org4a815ea">
+</div>
+<div id="outline-container-org219a9d5" class="outline-4">
+<h4 id="org219a9d5">leaf-keywords v1.0 to v2.0</h4>
+<div class="outline-text-4" id="text-org219a9d5">
+</div>
+<ul class="org-ul">
+<li><a id="org3d1bb44"></a>Remove leaf-keywords-after-load<br />
+<div class="outline-text-5" id="text-org3d1bb44">
+<p>
+We also have <code>leaf-keywords-after-require</code>, it's confusing.
+Plsease use <code>leaf-keywords-after-require</code>.
+</p>
+</div>
+</li>
+<li><a id="org3003e60"></a>Rename leaf-keyowrds-before-load to leaf-keyowrds-before-require<br />
+<div class="outline-text-5" id="text-org3003e60">
+<p>
+We also have <code>leaf-keyowrds-after-require</code>,
+we should use <code>leaf-keyowrds-before-require</code> to consistency.
+</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
 
-** License
-#+begin_example
+<div id="outline-container-org479ad4b" class="outline-3">
+<h3 id="org479ad4b">License</h3>
+<div class="outline-text-3" id="text-org479ad4b">
+<pre class="example" id="org9f2ccfe">
   General Public License Version 3 (GPLv3)
   Copyright (c) Naoya Yamashita - https://conao3.com
   https://github.com/conao3/leaf-keywords.el/blob/master/LICENSE
-#+end_example
+</pre>
+</div>
+</div>
 
-** Author
-- Naoya Yamashita ([[https://github.com/conao3][conao3]])
+<div id="outline-container-org494a454" class="outline-3">
+<h3 id="org494a454">Author</h3>
+<div class="outline-text-3" id="text-org494a454">
+<ul class="org-ul">
+<li>Naoya Yamashita (<a href="https://github.com/conao3">conao3</a>)</li>
+</ul>
+</div>
+</div>
 
-** Contributors
-- Leo Gaskin ([[https://github.com/leotaku][leotaku]])
-- Nasy ([[https://github.com/nasyxx][Nasy]])
+<div id="outline-container-org9c8ff34" class="outline-3">
+<h3 id="org9c8ff34">Contributors</h3>
+<div class="outline-text-3" id="text-org9c8ff34">
+<ul class="org-ul">
+<li>Leo Gaskin (<a href="https://github.com/leotaku">leotaku</a>)</li>
+<li>Nasy (<a href="https://github.com/nasyxx">Nasy</a>)</li>
+</ul>
+</div>
+</div>
 
-** Special Thanks
-Advice and comments given by [[http://emacs-jp.github.io/][Emacs-JP]]'s forum member has been a great help
-in developing ~leaf-keywords.el~.
+<div id="outline-container-orgce945b5" class="outline-3">
+<h3 id="orgce945b5">Special Thanks</h3>
+<div class="outline-text-3" id="text-orgce945b5">
+<p>
+Advice and comments given by <a href="http://emacs-jp.github.io/">Emacs-JP</a>'s forum member has been a great help
+in developing <code>leaf-keywords.el</code>.
+</p>
 
+<p>
 Thank you very much!!
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2019-05-24 Fri 00:00</p>
+<p class="author">Author: conao3</p>
+<p class="date">Created: 2022-11-14 Mon 10:24</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
